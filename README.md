@@ -1,14 +1,6 @@
 # tipsy
 
-Facebook-style tooltip plugin for jQuery
-
-(c) 2008-2010 Jason Frame (jason@onehackoranother.com)
-
-Released under The MIT License.
-
-## Description:
-
-tipsy is a simple jQuery plugin for generating Facebook-style tooltips.
+Tipsy is a simple jQuery plugin for generating Facebook-style tooltips.
 
 It's used by Twitter, Github, Slideshare and Bitbucket, amongst others.
 
@@ -26,13 +18,12 @@ Or clone from:
 
 ## Usage:
 
-1. Copy the contents of src/{images,javascripts,stylesheets} to the corresponding asset directories in your project. 
-   If the relative path of your images directory from your stylesheets directory is not "../images", you'll need to adjust tipsy.css appropriately.
+1. Copy the contents of src/ to the corresponding asset directories in your project.
 
 2. Insert the neccesary elements in your document's `<head>` section, e.g.:
  ```html
- <script src="/resources/jquery.tipsy.js"></script>
- <link rel="stylesheet" href="/stylesheets/tipsy.css"/>
+ <link rel="stylesheet" href="/src/jquery.tipsy.css">
+ <script src="/src/jquery.tipsy.js"></script>
  ```
 
  Remember to include jquery.tipsy.js *after* including the main jQuery library.
@@ -40,7 +31,7 @@ Or clone from:
 3. Initialise Tipsy in your document ready handler, e.g.:
  ```html
  <script>
- jQuery(document).ready(function ($) {
+ jQuery(function ($) {
      $('a[rel="tipsy"]').tipsy({ fade: true, gravity: 'n' });
  });
  </script>
@@ -48,3 +39,8 @@ Or clone from:
 
 Please refer to the docs directory for more examples and documentation.
 
+## License
+
+(c) 2008-2010 Jason Frame (jason@onehackoranother.com)
+
+Released under The [MIT License](LICENSE).
